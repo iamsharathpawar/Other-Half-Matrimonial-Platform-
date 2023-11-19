@@ -1,0 +1,116 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 6px auto;
+  background: #23262f;
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.navbar-toggler[aria-expanded="true"] span:first-of-type {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+  opacity: 0;
+}
+.navbar-toggler[aria-expanded="true"] span:last-of-type {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.navbar-toggler[aria-expanded="false"] span {
+  transform: none;
+  opacity: 1;
+}
+#navigation {
+  z-index: 9999;
+  transition: 0.5s;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+#navbarSupportedContent .nav-item a {
+  color: #9d9d9d;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#navbarSupportedContent .nav-item.active a {
+  color: #f1458d;
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-nav {
+  display: flex;
+  gap: 24px;
+}
+.nav-button-set {
+  display: flex;
+  gap: 16px;
+}
+.nav-button-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 4px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f1458d;
+  border-radius: 4px;
+}
+.nav-button-resigter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 4px;
+  height: 36px;
+  background: #f1458d;
+  border: 1px solid #f1458d;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+.nav-button-login:hover {
+  background: #ffe3ef;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+}
+.nav-button-resigter:hover {
+  background: #e41169;
+  border: 1px solid #e41169;
+  transition: 0.5s ease-in-out;
+}
+.login-button {
+  text-decoration: none;
+}
+/********************  Media Queries Start  ********************/
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 570px) {
+}
+@media screen and (max-width: 479px) {
+}
+/********************  Media Queries End  ********************/
